@@ -3,67 +3,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тест: Виктория - зоопсихолог</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <title>Виктория - зоопсихолог, специалист по поведению собак</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
             <a href="#" class="logo">
-                <i class="fas fa-paw"></i> Виктория Петрова
+                <i class="fas fa-paw logo-icon"></i>
+                Виктория Петрова
             </a>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#problems">Проблемы</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#process">Как проходит работа</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#faq">Вопросы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="https://t.me/your_bot" class="telegram-btn" target="_blank">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a></li>
+            </ul>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Тестовый сайт зоопсихолога</h1>
-            <p>Это демо-версия сайта. Все функции работают!</p>
-            <div class="buttons">
-                <button class="btn" id="testBtn">Тестовая кнопка</button>
-                <button class="btn secondary" id="formBtn">Открыть форму</button>
+            <div class="hero-content fade-in">
+                <h1>Виктория Петрова - зоопсихолог и специалист по поведению собак</h1>
+                <p>Помогаю понять язык вашего питомца и решить проблемы поведения гуманными методами. Более 8 лет опыта работы с собаками разных пород и характеров.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">Записаться на консультацию</a>
+                    <a href="#services" class="btn btn-secondary">Узнать об услугах</a>
+                </div>
             </div>
         </div>
+        
+        <!-- Animated paw prints -->
+        <div class="paw-print" style="top: 20%; left: 5%; animation-delay: 0s;"><i class="fas fa-paw"></i></div>
+        <div class="paw-print" style="top: 15%; right: 10%; animation-delay: 1s;"><i class="fas fa-paw"></i></div>
+        <div class="paw-print" style="bottom: 25%; left: 15%; animation-delay: 2s;"><i class="fas fa-paw"></i></div>
+        <div class="paw-print" style="bottom: 30%; right: 20%; animation-delay: 3s;"><i class="fas fa-paw"></i></div>
     </section>
 
-    <section class="features">
+    <!-- About Section -->
+    <section class="section about" id="about">
         <div class="container">
-            <h2>Что тестируем:</h2>
-            <div class="feature-cards">
-                <div class="card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Адаптивность</h3>
-                    <p>Сайт работает на всех устройствах</p>
+            <div class="about-content fade-in">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Виктория Петрова - зоопсихолог" loading="lazy">
                 </div>
-                <div class="card">
-                    <i class="fas fa-paper-plane"></i>
-                    <h3>Формы</h3>
-                    <p>Работают без сервера</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Анимации</h3>
-                    <p>Плавные переходы и эффекты</p>
+                <div class="about-text">
+                    <h2>Обо мне</h2>
+                    <p>Я — дипломированный зоопсихолог с более чем 8-летним опытом работы с собаками. Закончила МГУ по специальности "Зоология" и прошла дополнительное обучение по когнитивной этологии в Европе.</p>
+                    <p>Мой подход основан на гуманных методах коррекции поведения, которые учитывают индивидуальные особенности каждой собаки и укрепляют связь между питомцем и хозяином.</p>
+                    
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-check-circle"></i> Более 500 успешных случаев коррекции поведения</li>
+                        <li><i class="fas fa-check-circle"></i> Сертифицированный специалист по кинологии</li>
+                        <li><i class="fas fa-check-circle"></i> Постоянное участие в международных конференциях</li>
+                        <li><i class="fas fa-check-circle"></i> Автор статей и методических материалов</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="testModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Тестовая форма</h2>
-            <form id="testForm">
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Сообщение" rows="4"></textarea>
-                <button type="submit">Отправить тест</button>
-            </form>
+    <!-- Problems Section -->
+    <section class="section problems" id="problems">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>С какими проблемами я работаю</h2>
+                <p>Я помогаю решать различные проблемы поведения собак, используя научный подход и индивидуальные методы коррекции</p>
+            </div>
+            
+            <div class="problems-grid">
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <i class="fas fa-angry"></i>
+                    </div>
+                    <h3>Агрессия</h3>
+                    <p>К другим собакам, людям, членам семьи. Выявление причин и коррекция агрессивного поведения.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <i class="fas fa-frown"></i>
+                    </div>
+                    <h3>Страхи и тревожность</h3>
+                    <p>Боязнь громких звуков, одиночества, новых мест. Помощь в снижении тревожности у питомца.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Проблемы в доме</h3>
+                    <p>Порча вещей, лай без причины, неправильное поведение дома. Обучение правилам поведения.</p>
+                </div>
+                
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3>Сложности на прогулке</h3>
+                    <p>Тяжение поводка, подбор с земли, непослушание на улице. Коррекция поведения на прогулках.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Мои услуги</h2>
+                <p>Я предлагаю различные форматы консультаций, чтобы помочь вам и вашему питомцу в удобной форме</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Онлайн-консультация</h3>
+                    <p>Удобный формат для решения проблем поведения. Включает подробный разбор ситуации, рекомендации и план коррекции.</p>
+                    <div class="service-price">от 3 500 ₽</div>
+                    <a href="#contact" class="btn">Записаться</a>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Выездная консультация</h3>
+                    <p>Личный визит для оценки поведения собаки в естественной среде. Наиболее эффективный формат для сложных случаев.</p>
+                    <div class="service-price">от 5 000 ₽</div>
+                    <a href="#contact" class="btn">Записаться</a>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Программа коррекции</h3>
+                    <p>Комплексная работа с собакой в течение месяца. Включает несколько консультаций, индивидуальный план и поддержку.</p>
+                    <div class="service-price">от 12 000 ₽</div>
+                    <a href="#contact" class="btn">Записаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Как проходит работа</h2>
+                <p>Процесс коррекции поведения состоит из нескольких этапов, которые приводят к стабильному результату</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Диагностика</h3>
+                    <p>Подробный анализ проблемы, наблюдение за поведением собаки, выявление причин.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Индивидуальный план</h3>
+                    <p>Разработка персональной программы коррекции с учетом особенностей вашей собаки.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Реализация</h3>
+                    <p>Поэтапное выполнение программы с моим сопровождением и корректировкой при необходимости.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Поддержка</h3>
+                    <p>Закрепление результата, рекомендации по поддержанию правильного поведения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Отзывы клиентов</h2>
+                <p>Истории собак и их хозяев, которые уже прошли коррекцию поведения</p>
+            </div>
+            
+            <div class="reviews-slider">
+                <div class="reviews-container" id="reviewsContainer">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Собака Лаки" loading="lazy">
+                            </div>
+                            <div class="review-info">
+                                <h4>Лаки, золотистый ретривер</h4>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>"Лаки боялся громких звуков и прятался при любой возможности. После работы с Викторией он стал значительно спокойнее. Теперь мы можем гулять в городе без страха, а во время грозы он просто ложится рядом. Спасибо за помощь!"</p>
+                        </div>
+                        <div class="review-author">- Марина, хозяйка Лаки</div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Собака Бакс" loading="lazy">
+                            </div>
+                            <div class="review-info">
+                                <h4>Бакс, немецкая овчарка</h4>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>"Бакс проявлял агрессию к другим собакам на прогулке, из-за чего прогулки стали стрессом. Виктория помогла понять причины его поведения и научила нас правильно реагировать. Теперь мы можем спокойно гулять в парке, и Бакс стал намного уравновешеннее."</p>
+                        </div>
+                        <div class="review-author">- Алексей, хозяин Бакса</div>
+                    </div>
+                </div>
+                
+                <div class="review-nav">
+                    <button class="review-nav-btn" id="prevReview">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="review-nav-btn" id="nextReview">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Часто задаваемые вопросы</h2>
+                <p>Ответы на самые распространенные вопросы о коррекции поведения собак</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Как быстро я увижу результат?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Первые изменения можно заметить уже после 1-2 консультаций, но стабильный результат достигается при соблюдении всех рекомендаций в течение 1-3 месяцев. Срок зависит от сложности проблемы и индивидуальных особенностей собаки.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span>Вы используете жесткие методы дрессировки?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Нет, я работаю только гуманными методами, основанными на современных научных знаниях о поведении животных. Я не использую электрошоковые ошейники, строгие ошейники, физические наказания или другие методы, вызывающие страх и боль у собаки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Запись на консультацию</h2>
+                <p>Заполните форму, и я свяжусь с вами в течение 24 часов для уточнения деталей</p>
+            </div>
+            
+            <div class="contact-form-container fade-in">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Номер телефона *</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Выберите услугу *</label>
+                        <select id="service" class="form-control" required>
+                            <option value="">Выберите услугу</option>
+                            <option value="online">Онлайн-консультация</option>
+                            <option value="visit">Выездная консультация</option>
+                            <option value="program">Программа коррекции</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Расскажите о проблеме *</label>
+                        <textarea id="message" class="form-control" rows="4" required placeholder="Опишите поведение собаки, возраст, породу, как давно существует проблема..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Отправить заявку
+                        </button>
+                    </div>
+                    
+                    <div class="form-note">
+                        <p><small>Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</small></p>
+                    </div>
+                </form>
+                
+                <div class="contact-alternative">
+                    <h3>Или напишите напрямую:</h3>
+                    <div class="contact-methods">
+                        <a href="https://t.me/your_username" class="contact-method" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram: @your_username</span>
+                        </a>
+                        <a href="tel:+79991234567" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (999) 123-45-67</span>
+                        </a>
+                        <a href="mailto:victoria@example.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>victoria@example.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-paw"></i>
+                        Виктория Петрова
+                    </div>
+                    <p>Зоопсихолог, специалист по поведению собак. Помогаю решать проблемы поведения гуманными методами.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/your_bot" class="social-link" target="_blank" title="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://instagram.com/your_profile" class="social-link" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://vk.com/your_profile" class="social-link" target="_blank" title="ВКонтакте">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://wa.me/79991234567" class="social-link" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#problems">Проблемы поведения</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#process">Как проходит работа</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#faq">Вопросы</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-phone-alt"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> victoria@example.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва</p>
+                    <p><i class="fas fa-clock"></i> Пн-Пт: 9:00-20:00</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Виктория Петрова - зоопсихолог. Все права защищены.</p>
+                <p><a href="#privacy" style="color: rgba(255, 255, 255, 0.7);">Политика конфиденциальности</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
